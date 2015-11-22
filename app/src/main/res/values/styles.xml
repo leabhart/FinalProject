@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- craig: changed theme to "NoActionBar" to hide the action bar -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- craig: set to full screen to hide the status bar-->
+        <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+</resources>
