@@ -43,7 +43,7 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/chapter7_action2"
+        android:text="@string/chapter7_action3"
         android:id="@+id/action7_3"
         android:layout_gravity="center"
         android:layout_below="@+id/chapter7_2_Text"
