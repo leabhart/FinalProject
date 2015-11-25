@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.drake.cs188.finalproject.coverpage.TitlePageFragment"
+    android:background="@color/red">
+
+    <!-- Jesse Jeun: Basic set up for the title page with character input and button submission-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleText"
+        android:text="@string/titlepage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstCharacter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:hint="First Character"
+        android:layout_below="@+id/titleText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondCharacter"
+        android:layout_centerHorizontal="true"
+        android:hint="Second Character"
+        android:layout_below="@+id/firstCharacter"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/submitButton"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/secondCharacter"
+        android:layout_marginTop="35dp" />
+
+
+</RelativeLayout>

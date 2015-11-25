@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.drake.cs188.finalproject.chapter7.Chapter7_2Fragment"
+    android:background="@color/magenta">
+
+
+    <!--Jesse Jeun: Basic set up for action page with textview and buttons-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapter7_2_Text"
+        android:text="@string/chapter7_2_text"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter7_action1"
+        android:id="@+id/action7_1"
+        android:layout_gravity="left|center_vertical"
+        android:layout_below="@+id/chapter7_2_Text"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/action7_2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter7_action2"
+        android:id="@+id/action7_2"
+        android:layout_gravity="center"
+        android:layout_below="@+id/chapter7_2_Text"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter7_action2"
+        android:id="@+id/action7_3"
+        android:layout_gravity="center"
+        android:layout_below="@+id/chapter7_2_Text"
+        android:layout_toRightOf="@+id/action7_2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp" />
+
+</RelativeLayout>

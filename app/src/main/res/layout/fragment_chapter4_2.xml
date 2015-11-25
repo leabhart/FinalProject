@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.drake.cs188.finalproject.chapter4.Chapter4_2Fragment"
+    android:background="@color/yellow">
+
+
+    <!--Jesse Jeun: Basic set up for action page with textview and buttons-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapter4_2_Text"
+        android:text="@string/chapter4_2_text"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter4_action1"
+        android:id="@+id/action4_1"
+        android:layout_gravity="left|center_vertical"
+        android:layout_below="@+id/chapter4_2_Text"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="0dp"
+        android:layout_alignLeft="@+id/chapter4_2_Text" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chapter4_action2"
+        android:id="@+id/action4_2"
+        android:layout_gravity="center"
+        android:layout_below="@+id/chapter4_2_Text"
+        android:layout_toRightOf="@+id/action4_1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp" />
+
+</RelativeLayout>
