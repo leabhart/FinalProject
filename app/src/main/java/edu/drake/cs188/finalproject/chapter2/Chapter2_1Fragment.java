@@ -1,6 +1,7 @@
 package edu.drake.cs188.finalproject.chapter2;
 
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
@@ -46,6 +47,10 @@ public class Chapter2_1Fragment extends Fragment {
 
         // creating object rootView that is istantiated to value of type ViewGroup
         View rootView = inflater.inflate(R.layout.fragment_chapter2_1, container, false);
+
+        // craig: play bus horn when fragment appears
+        MediaPlayer chapter2_1_bus_horn = MediaPlayer.create(getContext(),R.raw.horn);
+        chapter2_1_bus_horn.start();
 
         return rootView;    //returning the rootView to be displayed on the fragment
     }
