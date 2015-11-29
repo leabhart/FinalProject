@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="edu.drake.cs188.finalproject.chapter2.Chapter2_1Fragment"
-    android:background="@color/blue">
+    android:background="@drawable/chapter_two_1">
 
     <!-- Jesse Jeun: Basic set up for the cover page with text view-->
 
@@ -12,6 +12,7 @@
         android:id="@+id/chapter2_1_Text"
         android:text="@string/chapter2_1_text"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        />
 
 </RelativeLayout>
