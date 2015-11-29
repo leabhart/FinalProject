@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="edu.drake.cs188.finalproject.chapter2.Chapter2_1Fragment"
-    android:background="@drawable/chapter2_1">
+    android:background="@drawable/chapter2_2">
 
     <!-- Jesse Jeun: Basic set up for the cover page with text view-->
 
