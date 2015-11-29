@@ -13,10 +13,24 @@
 
     <!-- Chapter 2 -->
     <string name="title_activity_chapter2">Chapter2</string>
-    <string name="chapter2_1_text">Hello, This is Chapter 2 Page 1</string>
-    <string name="chapter2_2_text">Hello, This is Chapter 2 Page 2</string>
-    <string name="chapter2_action1">Choice 1</string>
-    <string name="chapter2_action2">Choice 2</string>
+    <string name="chapter2_1_text">X and Y like riding the bus\, but they both like sitting next to the window.</string>
+    <string name="chapter2_2_text">\"Y,\" said X, \"You can sit next to the window today. I sat next to the window last time.\"</string>
+    <string name="chapter2_3_text">\"Thank you!\" exclaimed Y.</string>
+    <string name="chapter2_4_text">There are a lot of things to see out the window.</string>
+    <string name="chapter2_5_text">Sometimes you see a dog.</string>
+    <string name="chapter2_6_text">Sometimes you see the nice police officer.</string>
+    <string name="chapter2_7_text">Sometimes you even see the Mayor!</string>
+    <string name="chapter2_8_text">\"I\'m hungry,\" said X.</string>
+    <string name="chapter2_9_text">\"I have a big cookie in my lunch box,\" said Y.</string>
+    <string name="chapter2_10_text">\"You are so lucky Y. My lunch box doesn\'t have any dessert!\" said X. \"I wish I had a cookie!\"</string>
+    <string name="chapter2_11_text">Should Y share the cookie with X?</string>
+    <string name="chapter2_12_text"></string>
+    <string name="chapter2_13_text"></string>
+    <string name="chapter2_14_text"></string>
+    <string name="chapter2_15_text"></string>
+    <string name="chapter2_16_text"></string>
+    <string name="chapter2_action1">Share cookie</string>
+    <string name="chapter2_action2">Don\'t share cookie</string>
 
     <!-- Chapter 3 -->
     <string name="title_activity_chapter3">Chapter3</string>
