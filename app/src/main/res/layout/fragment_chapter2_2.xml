@@ -3,7 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.drake.cs188.finalproject.chapter2.Chapter2_1Fragment"
+    tools:context="edu.drake.cs188.finalproject.chapter2.Chapter2_2Fragment"
     android:background="@drawable/chapter2_2">
 
     <!-- Jesse Jeun: Basic set up for the cover page with text view-->
@@ -11,10 +11,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/chapter2_1_Text"
-        android:text="@string/chapter2_2_text"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/chapter2_2_Text"
         android:layout_marginTop="50dp"
-        />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:padding="30dp" />
 
 </RelativeLayout>

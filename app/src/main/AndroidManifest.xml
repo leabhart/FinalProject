@@ -51,11 +51,6 @@
             android:label="@string/title_activity_chapter7"
             android:screenOrientation="portrait">
         </activity>
-        <activity
-            android:name=".chapter8.Chapter8"
-            android:label="@string/title_activity_chapter8"
-            android:screenOrientation="portrait">
-        </activity>
     </application>
 
 </manifest>

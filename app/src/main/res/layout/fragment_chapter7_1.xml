@@ -2,16 +2,18 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="edu.drake.cs188.finalproject.chapter7.Chapter7_1Fragment"
-    android:background="@color/magenta">
+    android:background="@color/red"
+    android:padding="30dp">
 
-    <!-- Jesse Jeun: Basic set up for the cover page with text view-->
+    <!--Jesse Jeun: Basic set up for action page with textview and buttons-->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chapter7_1_Text"
-        android:text="@string/chapter7_1_text"
+        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginBottom="30dp" />
 
 </RelativeLayout>
+

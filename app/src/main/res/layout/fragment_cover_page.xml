@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="edu.drake.cs188.finalproject.coverpage.CoverPageFragment"
-    android:background="@color/red">
+    android:background="@drawable/cover">
 
     <!-- Jesse Jeun: Basic set up for the cover page with text view-->
 
@@ -10,8 +10,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/coverText"
-        android:text="@string/coverpage"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:padding="30dp" />
 
 </RelativeLayout>

@@ -43,7 +43,7 @@ public class Chapter7 extends FragmentActivity{
 
     // Pager adapter class that will determine which fragment should appear on the screen
     public class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
-        final int PAGE_COUNT = 2;
+        final int PAGE_COUNT = 6;
 
         // pager adapter method
         public ScreenSlidePagerAdapter(android.support.v4.app.FragmentManager fm) {
@@ -66,6 +66,14 @@ public class Chapter7 extends FragmentActivity{
                     return Chapter7_1Fragment.newInstance(position);
                 case 1:
                     return Chapter7_2Fragment.newInstance(position);
+                case 2:
+                    return Chapter7_3Fragment.newInstance(position);
+                case 3:
+                    return Chapter7_4Fragment.newInstance(position);
+                case 4:
+                    return Chapter7_5Fragment.newInstance(position);
+                case 5:
+                    return Chapter7_6Fragment.newInstance(position);
                 default:
                     return null;
             }

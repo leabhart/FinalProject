@@ -10,35 +10,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chapter1_2_Text"
-        android:text="@string/chapter1_2_text"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter1_action1"
-        android:id="@+id/action1_1"
-        android:layout_gravity="left|center_vertical"
-        android:layout_below="@+id/chapter1_2_Text"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="0dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignLeft="@+id/chapter1_2_Text" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter1_action2"
-        android:id="@+id/action1_2"
-        android:layout_gravity="center"
-        android:layout_below="@+id/chapter1_2_Text"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_toRightOf="@+id/action1_1" />
+        android:layout_marginBottom="30dp"
+        android:padding="30dp" />
 
 </RelativeLayout>

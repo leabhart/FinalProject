@@ -1,11 +1,15 @@
 package edu.drake.cs188.finalproject.chapter2;
 
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import edu.drake.cs188.finalproject.R;
 
@@ -45,6 +49,21 @@ public class Chapter2_3Fragment extends Fragment {
 
         // creating object rootView that is istantiated to value of type ViewGroup
         View rootView = inflater.inflate(R.layout.fragment_chapter2_3, container, false);
+
+        // declaring and intializing shared preferences function on android devices
+        SharedPreferences shared = this.getActivity().getSharedPreferences("StoryTime", Context.MODE_PRIVATE);
+        String firstCharacter = shared.getString("firstCharacter", "");  // getting variable firstCharacter from shared preferences
+        String secondCharacter = shared.getString("secondCharacter", "");  // getting variable secondCharacter from shared preferences
+
+        String text = getResources().getString(R.string.chapter2_3_1text) + secondCharacter +" "+
+                getResources().getString(R.string.chapter2_3_2text) +" "+ firstCharacter +" "+
+                getResources().getString(R.string.chapter2_3_3text);
+
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
+        TextView textView = (TextView) rootView.findViewById(R.id.chapter2_3_Text);
+        textView.setTypeface(tf);
+        textView.setTextSize(27);
+        textView.setText(text);
 
         return rootView;    //returning the rootView to be displayed on the fragment
     }

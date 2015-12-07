@@ -5,39 +5,15 @@
     android:background="@color/purple">
 
 
-    <!--Jesse Jeun: Basic set up for action page with textview and buttons-->
+    <!-- Jesse Jeun: Basic set up for the cover page with text view-->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chapter5_2_Text"
-        android:text="@string/chapter5_2_text"
         android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter5_action1"
-        android:id="@+id/action5_1"
-        android:layout_gravity="left|center_vertical"
-        android:layout_below="@+id/chapter5_2_Text"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="0dp"
-        android:layout_alignLeft="@+id/chapter5_2_Text" />
-
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/chapter5_action2"
-        android:id="@+id/action5_2"
-        android:layout_gravity="center"
-        android:layout_below="@+id/chapter5_2_Text"
-        android:layout_toRightOf="@+id/action5_1"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp" />
+        android:layout_marginBottom="30dp"
+        android:padding="30dp" />
 
 </RelativeLayout>

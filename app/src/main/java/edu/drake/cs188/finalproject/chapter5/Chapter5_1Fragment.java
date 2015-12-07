@@ -1,12 +1,17 @@
 package edu.drake.cs188.finalproject.chapter5;
 
 
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import edu.drake.cs188.finalproject.R;
 
@@ -46,6 +51,36 @@ public class Chapter5_1Fragment extends Fragment {
 
         // creating object rootView that is istantiated to value of type ViewGroup
         View rootView = inflater.inflate(R.layout.fragment_chapter5_1, container, false);
+
+        // declaring and intializing shared preferences function on android devices
+        SharedPreferences shared = this.getActivity().getSharedPreferences("StoryTime", Context.MODE_PRIVATE);
+        String firstCharacter = shared.getString("firstCharacter", "");  // getting variable firstCharacter from shared preferences
+        String secondCharacter = shared.getString("secondCharacter", "");  // getting variable secondCharacter from shared preferences
+        int decision = shared.getInt("decision", 0);  // getting variable decision from shared preferences
+
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
+        if (decision == 1){
+            String text = firstCharacter +" "+ getResources().getString(R.string.chapter5_1_1textFour) +" "+
+                    secondCharacter + " " + getResources().getString(R.string.chapter5_1_2textFour);
+
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter5_1_1));
+            TextView textView = (TextView) rootView.findViewById(R.id.chapter5_1_Text);
+            textView.setTypeface(tf);
+            textView.setTextSize(27);
+            textView.setText(text);
+        }
+
+        if(decision == 2){
+            String text = firstCharacter +" "+ getResources().getString(R.string.chapter5_1_1textSwing)
+                    +" "+ secondCharacter + " " + getResources().getString(R.string.chapter5_1_2textSwing);
+
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter5_1_2));
+            TextView textView = (TextView) rootView.findViewById(R.id.chapter5_1_Text);
+            textView.setTypeface(tf);
+            textView.setTextSize(27);
+            textView.setText(text);
+
+        }
 
         return rootView;    //returning the rootView to be displayed on the fragment
     }

@@ -12,4 +12,5 @@
     <color name="red">#ff6961</color>
     <color name="yellow">#fdfd96</color>
     <color name="magenta">#ff4aff</color>
+    <color name="black">#000000</color>
 </resources>

@@ -4,74 +4,257 @@
     <string name="coverpage">Hello, This is the Cover Page</string>
     <string name="titlepage">Hello, This is the Title Page</string>
 
+
     <!-- Chapter 1 -->
-    <string name="title_activity_chapter1">Chapter1</string>
-    <string name="chapter1_1_text">Hello, This is Chapter 1 Page 1</string>
-    <string name="chapter1_2_text">Hello, This is Chapter 1 Page 2</string>
-    <string name="chapter1_action1">Choice 1</string>
-    <string name="chapter1_action2">Choice 2</string>
+    <string name="title_activity_chapter1">Chapter 1</string>
+
+    <string name="chapter1_1_1text">One day, </string>
+    <string name="chapter1_1_2text"> woke up on this sunny day. Today is </string>
+    <string name="chapter1_1_3text">’s first day of school.</string>
+
+    <string name="chapter1_2_1text">How excited </string>
+    <string name="chapter1_2_2text"> is! Now he will leave his house and start his day!</string>
+
+    <string name="chapter1_3_1text"> is walking to the bus stop, which will take </string>
+    <string name="chapter1_3_2text"> to school.</string>
+
+    <string name="chapter1_4_1text">Hey, look! It’s </string>
+    <string name="chapter1_4_2text">’s friend,  </string>
+    <string name="chapter1_4_3text">. What will he do next?</string>
+
+    <string name="chapter1_5_1text">What should </string>
+    <string name="chapter1_5_2text"> do next?</string>
+
+    <string name="chapter1_action1_1">Should </string>
+    <string name="chapter1_action1_2"> wave to </string>
+
+    <string name="chapter1_action2_1">Shoud </string>
+    <string name="chapter1_action2_2"> high-five </string>
+
 
     <!-- Chapter 2 -->
-    <string name="title_activity_chapter2">Chapter2</string>
-    <string name="chapter2_1_text">X and Y like riding the bus\, but they both like sitting next to the window.</string>
-    <string name="chapter2_2_text">\"Y,\" said X, \"You can sit next to the window today. I sat next to the window last time.\"</string>
-    <string name="chapter2_3_text">\"Thank you!\" exclaimed Y.</string>
-    <string name="chapter2_4_text">There are a lot of things to see out the window.</string>
-    <string name="chapter2_5_text">Sometimes you see a dog.</string>
-    <string name="chapter2_6_text">Sometimes you see the nice police officer.</string>
-    <string name="chapter2_7_text">Sometimes you even see the Mayor!</string>
-    <string name="chapter2_8_text">\"I\'m hungry,\" said X.</string>
-    <string name="chapter2_9_text">\"I have a big cookie in my lunch box,\" said Y.</string>
-    <string name="chapter2_10_text">\"You are so lucky Y. My lunch box doesn\'t have any dessert!\" said X. \"I wish I had a cookie!\"</string>
-    <string name="chapter2_11_text">Should Y share the cookie with X?</string>
-    <string name="chapter2_12_text"></string>
-    <string name="chapter2_13_text"></string>
-    <string name="chapter2_14_text"></string>
-    <string name="chapter2_15_text"></string>
-    <string name="chapter2_16_text"></string>
-    <string name="chapter2_action1">Share cookie</string>
-    <string name="chapter2_action2">Don\'t share cookie</string>
+    <string name="title_activity_chapter2">Chapter 2</string>
+
+    <string name="chapter2_1_1textWave">sees</string>
+    <string name="chapter2_1_2textWave">and decides to wave at him.</string>
+
+    <string name="chapter2_1_1textFive">sees</string>
+    <string name="chapter2_1_2textFive">and decides to high-five him.</string>
+
+    <string name="chapter2_2_1text"> and </string>
+    <string name="chapter2_2_2text"> like riding the bus, but they both like sitting next to the window.</string>
+
+    <string name="chapter2_3_1text">\"</string>
+    <string name="chapter2_3_2text">, "You can sit next to the window today,\"</string>
+    <string name="chapter2_3_3text">said as they walked to the bus. "I sat next to the window last time."</string>
+
+    <string name="chapter2_4_1text">\"Thank you!\" exclaimed </string>
+    <string name="chapter2_4_2text">.</string>
+
+    <string name="chapter2_5_1text">There are a lot of things to see out the window.</string>
+
+    <string name="chapter2_6_1text">Sometimes you see a dog.</string>
+
+    <string name="chapter2_7_1text">Sometimes you see the nice police officer.</string>
+
+    <string name="chapter2_8_1text">\"I\'m hungry\", said </string>
+    <string name="chapter2_8_2text">. \"I have a big cookie in my lunch box,\" said </string>
+    <string name="chapter2_8_3text">.</string>
+
+    <string name="chapter2_9_1text">\"You are so lucky </string>
+    <string name="chapter2_9_2text">. My lunch box doesn\'t have any dessert!" said </string>
+    <string name="chapter2_9_3text">. "I wish I had a cookie!"</string>
+
+    <string name="chapter2_10_1text">Should </string>
+    <string name="chapter2_10_2text"> share the cookie with </string>
+    <string name="chapter2_10_3text">\?</string>
+
+    <string name="chapter2_action1_1">Should </string>
+    <string name="chapter2_action1_2"> share the cookie?</string>
+
+    <string name="chapter2_action2_1">Should </string>
+    <string name="chapter2_action2_2"> eat the cookie by himself?</string>
+
 
     <!-- Chapter 3 -->
-    <string name="title_activity_chapter3">Chapter3</string>
-    <string name="chapter3_1_text">Hello, This is Chapter 3 Page 1</string>
-    <string name="chapter3_2_text">Hello, This is Chapter 3 Page 2</string>
-    <string name="chapter3_action1">Choice 1</string>
-    <string name="chapter3_action2">Choice 2</string>
+    <string name="title_activity_chapter3">Chapter 3</string>
 
-    <!-- Chapter 4 -->
-    <string name="title_activity_chapter4">Chapter4</string>
-    <string name="chapter4_1_text">Hello, This is Chapter 4 Page 1</string>
-    <string name="chapter4_2_text">Hello, This is Chapter 4 Page 2</string>
-    <string name="chapter4_action1">Choice 1</string>
-    <string name="chapter4_action2">Choice 2</string>
+    <string name="chapter3_1_1textShare">\"Don\'t worry, </string>
+    <string name="chapter3_1_2textShare">! This cookie is big enough that we can both eat it!” </string>
+    <string name="chapter3_1_3textShare"> said.</string>
+
+    <string name="chapter3_2_1textShare"> smiled very big as </string>
+    <string name="chapter3_2_2textShare"> broke the cookie in half. They both ate the cookie, and it was very yummy.</string>
+
+    <string name="chapter3_1_1textNoShare"> took a small bite of the big cookie. </string>
+    <string name="chapter3_1_2textNoShare"> looked very sad and very hungry.</string>
+
+    <string name="chapter3_2_1textNoShare"> doesn\'t like seeing </string>
+    <string name="chapter3_2_2textNoShare"> sad. If </string>
+    <string name="chapter3_2_3textNoShare"> breaks the cookie in half, then there will be more than enough cookie for both of them!</string>
+
+    <string name="chapter3_3_1text"> and </string>
+    <string name="chapter3_3_2text"> arrived at shool!</string>
+
+    <string name="chapter3_4_1text"> turns to </string>
+    <string name="chapter3_4_2text"> and exclaims, “The school is so big!”</string>
+
+    <string name="chapter3_5_1text">Through the window they can see the library, there are so many books and computers, and look, there\’s storytime!</string>
+
+    <string name="chapter3_6_1text">But outside they can also see the playground with many new friends and fun things to play with.</string>
+
+    <string name="chapter3_7_1text">Where should</string>
+    <string name="chapter3_7_2text">and</string>
+    <string name="chapter3_7_3text">go?</string>
+
+    <string name="chapter3_action1_1">Should </string>
+    <string name="chapter3_action1_2"> &amp; </string>
+    <string name="chapter3_action1_3"> go to the library?</string>
+
+    <string name="chapter3_action2_1">Should </string>
+    <string name="chapter3_action2_2"> &amp; </string>
+    <string name="chapter3_action2_3"> go to the playground?</string>
+
+
+    <!-- Chapter 4 Playground -->
+    <string name="title_activity_chapter4">Chapter 4</string>
+
+    <string name="chapter4_1_1playtext"> and </string>
+    <string name="chapter4_1_2playtext"> run over to the playground. But there’s so much to do!</string>
+    <string name="chapter4_1_3playtext">There are balls and swings, new friends and slides! What should they do first?</string>
+
+    <string name="chapter4_2_1playtext"> and </string>
+    <string name="chapter4_2_2playtext"> make new friends playing four square or riding the swings?</string>
+
+    <string name="chapter4_playaction1_1">Should </string>
+    <string name="chapter4_playaction1_2"> &amp; </string>
+    <string name="chapter4_playaction1_3"> go play four square and make new friends?</string>
+
+    <string name="chapter4_playaction2_1">Should </string>
+    <string name="chapter4_playaction2_2"> &amp; </string>
+    <string name="chapter4_playaction2_3"> make new friends while playing on the swings?</string>
+
+
+    <!-- Chapter 4 Library -->
+    <string name="chapter4_1_1libtext">At the library, there’s so much for</string>
+    <string name="chapter4_1_2libtext"> and </string>
+    <string name="chapter4_1_3libtext"> to learn! There are books to read and games to play.</string>
+
+    <string name="chapter4_2_1libtext"> and </string>
+    <string name="chapter4_2_2libtext"> look all around at the fun choices. What should they pick first?</string>
+
+    <string name="chapter4_libaction1_1">Should </string>
+    <string name="chapter4_libaction1_2"> &amp; </string>
+    <string name="chapter4_libaction1_3"> play a computer game?</string>
+
+    <string name="chapter4_libaction2_1">Should </string>
+    <string name="chapter4_libaction2_2"> &amp; </string>
+    <string name="chapter4_libaction2_3"> listen to a story?</string>
+
 
     <!-- Chapter 5 -->
-    <string name="title_activity_chapter5">Chapter5</string>
-    <string name="chapter5_1_text">Hello, This is Chapter 5 Page 1</string>
-    <string name="chapter5_2_text">Hello, This is Chapter 5 Page 2</string>
-    <string name="chapter5_action1">Choice 1</string>
-    <string name="chapter5_action2">Choice 2</string>
+    <string name="title_activity_chapter5">Chapter 5</string>
+
+    <string name="chapter5_1_1textSwing">and </string>
+    <string name="chapter5_1_2textSwing">love riding the swings!</string>
+
+    <string name="chapter5_1_1textFour">and</string>
+    <string name="chapter5_1_2textFour">love playing four square!</string>
+
+    <string name="chapter5_2_1text">\" </string>
+    <string name="chapter5_2_2text"> and </string>
+    <string name="chapter5_2_3text"> had so much fun at the playground, but now it is time to go to class.” </string>
+
+    <string name="chapter5_3_1text">\"Now, </string>
+    <string name="chapter5_3_2text"> and </string>
+    <string name="chapter5_3_3text"> had the choice of three different classes.”</string>
+
+    <string name="chapter5_4_1text"> turns to </string>
+    <string name="chapter5_4_2text">. \"Which classroom should we pick, </string>
+    <string name="chapter5_4_3text">\? Red, Green, or Blue?\"</string>
+
+    <string name="chapter5_5_1text">Which classroom should</string>
+    <string name="chapter5_5_2text">and</string>
+    <string name="chapter5_5_3text">pick?</string>
+
+    <string name="chapter5_action1_1">Should </string>
+    <string name="chapter5_action1_2"> &amp; </string>
+    <string name="chapter5_action1_3"> pick the Red classroom?</string>
+
+    <string name="chapter5_action2_1">Should </string>
+    <string name="chapter5_action2_2"> &amp; </string>
+    <string name="chapter5_action2_3"> pick the Green classroom?</string>
+
+    <string name="chapter5_action3_1">Should </string>
+    <string name="chapter5_action3_2"> &amp; </string>
+    <string name="chapter5_action3_3"> pick the Blue classroom?</string>
+
 
     <!-- Chapter 6 -->
-    <string name="title_activity_chapter6">Chapter6</string>
-    <string name="chapter6_1_text">Hello, This is Chapter 6 Page 1</string>
-    <string name="chapter6_2_text">Hello, This is Chapter 6 Page 2</string>
-    <string name="chapter6_action1">Choice 1</string>
-    <string name="chapter6_action2">Choice 2</string>
+    <string name="title_activity_chapter6">Chapter 6</string>
+
+    <string name="chapter6_1_1textGame"> and </string>
+    <string name="chapter6_1_2textGame"> love playing Hello World. It’s their favorite game. \“Why don’t we take turns playing?” </string>
+    <string name="chapter6_1_3textGame"> said. \“That’s a great idea, </string>
+    <string name="chapter6_1_4textGame">!\" </string>
+    <string name="chapter6_1_5textGame"> said.</string>
+
+    <string name="chapter6_2_1textGame"> and </string>
+    <string name="chapter6_2_2textGame"> take turns printing and adding comments in Hello World.</string>
+
+    <string name="chapter6_1_1textBook"> and </string>
+    <string name="chapter6_1_2textBook"> love listening to Mrs. Letter read. She’s their favorite teacher.
+        Mrs. Letter is reading their favorite book: Griff the Bulldog Goes to Camp. </string>
+
+    <string name="chapter6_2_1textBook"> and </string>
+    <string name="chapter6_2_2textBook">sit criss-cross and listen to the story.</string>
+
+    <string name="chapter6_3_1text">\" </string>
+    <string name="chapter6_3_2text"> and </string>
+    <string name="chapter6_3_3text"> had so much fun at the library, but now it is time to go to class.” </string>
+
+    <string name="chapter6_4_1text">\"Now, </string>
+    <string name="chapter6_4_2text"> and </string>
+    <string name="chapter6_4_3text"> had the choice of three different classes.”</string>
+
+    <string name="chapter6_5_1text"> turns to </string>
+    <string name="chapter6_5_2text">.\"Which classroom should we pick, </string>
+    <string name="chapter6_5_3text">\? Red, Green, or Blue?\"</string>
+
+    <string name="chapter6_action1_1">Should </string>
+    <string name="chapter6_action1_2"> &amp; </string>
+    <string name="chapter6_action1_3"> pick the Red classroom?</string>
+
+    <string name="chapter6_action2_1">Should </string>
+    <string name="chapter6_action2_2"> &amp; </string>
+    <string name="chapter6_action2_3"> pick the Green classroom?</string>
+
+    <string name="chapter6_action3_1">Should </string>
+    <string name="chapter6_action3_2"> &amp; </string>
+    <string name="chapter6_action3_3"> pick the Blue classroom?</string>
+
 
     <!-- Chapter 7 -->
     <string name="title_activity_chapter7">Chapter7</string>
-    <string name="chapter7_1_text">Hello, This is Chapter 7 Page 1</string>
-    <string name="chapter7_2_text">Hello, This is Chapter 7 Page 2</string>
-    <string name="chapter7_action1">Choice 1</string>
-    <string name="chapter7_action2">Choice 2</string>
-    <string name="chapter7_action3">Choice 3</string>
 
-    <!-- Chapter 8 -->
-    <string name="title_activity_chapter8">Chapter8</string>
-    <string name="chapter8_1_text">Hello, This is Chapter 8 Page 1</string>
-    <string name="chapter8_2_text">Hello, This is Chapter 8 Page 2 aka THE END</string>
-    <string name="chapter8_action1">Return To Cover Page</string>
+    <string name="chapter7_1_1text">and</string>
+    <string name="chapter7_1_2text">  think for a moment. "Let's pick the </string>
+    <string name="chapter7_1_3text"> classroom and were greeted by Mr...</string>
+
+    <string name="chapter7_2_1urness">"... Urness! Hello World! Welcome to computer class!</string>
+    <string name="chapter7_2_2inman">"... Inman! Yo! Welcome to story class!"</string>
+    <string name="chapter7_2_3fender">"... Fender! Hey there! Welcome to drawing class!</string>
+
+    <string name="chapter7_4_1text">\" </string>
+    <string name="chapter7_4_2text"> and </string>
+    <string name="chapter7_4_3text">had so much fun learning, but it is time to go home and rest
+        so they can come back to school and have more fun tomorrow.”</string>
+
+    <string name="chapter7_5_1text">The End</string>
+
+    <string name="chapter7_action1">Return to the Beginning</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

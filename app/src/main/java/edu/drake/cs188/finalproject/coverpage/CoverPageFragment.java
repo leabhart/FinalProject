@@ -1,10 +1,12 @@
 package edu.drake.cs188.finalproject.coverpage;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import edu.drake.cs188.finalproject.R;
 
@@ -44,6 +46,13 @@ public class CoverPageFragment extends Fragment {
 
         // creating object rootView that is istantiated to value of type ViewGroup
         View rootView = inflater.inflate(R.layout.fragment_cover_page, container, false);
+
+//        String text = "";
+//        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
+//        TextView textView = (TextView) rootView.findViewById(R.id.coverText);
+//        textView.setTypeface(tf);
+//        textView.setTextSize(27);
+//        textView.setText(text);
 
         return rootView;    //returning the rootView to be displayed on the fragment
     }

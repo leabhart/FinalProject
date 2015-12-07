@@ -1,14 +1,19 @@
 package edu.drake.cs188.finalproject.chapter3;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import edu.drake.cs188.finalproject.R;
 import edu.drake.cs188.finalproject.chapter4.Chapter4;
@@ -50,44 +55,37 @@ public class Chapter3_2Fragment extends Fragment {
         // creating object rootView that is istantiated to value of type ViewGroup
         View rootView = inflater.inflate(R.layout.fragment_chapter3_2, container, false);
 
-        Button submitAction1;
-        Button submitAction2;
-        submitAction1 = (Button) rootView.findViewById(R.id.action3_1);
-        submitAction2 = (Button) rootView.findViewById(R.id.action3_2);
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
 
-        // creating on click listener for submitAction1
-        submitAction1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                action1(); // calling the submit method
-            }
-        });
+        // declaring and intializing shared preferences function on android devices
+        SharedPreferences shared = this.getActivity().getSharedPreferences("StoryTime", Context.MODE_PRIVATE);
+        String firstCharacter = shared.getString("firstCharacter", "");  // getting variable firstCharacter from shared preferences
+        String secondCharacter = shared.getString("secondCharacter", "");  // getting variable secondCharacter from shared preferences
+        int decision = shared.getInt("decision", 0);
 
-        // creating on click listener for submitAction2
-        submitAction2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                action2(); // calling the submit method
-            }
-        });
+        if (decision == 1) {
+            String text = firstCharacter + " " + getResources().getString(R.string.chapter3_2_1textShare) + " " +
+                    secondCharacter + " " + getResources().getString(R.string.chapter3_2_2textShare);
 
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter3_2_1));
+            TextView textView = (TextView) rootView.findViewById(R.id.chapter3_2_Text);
+            textView.setTypeface(tf);
+            textView.setTextSize(27);
+            textView.setText(text);
+        }
+
+        if (decision == 2) {
+            String text = secondCharacter + " " + getResources().getString(R.string.chapter3_2_1textNoShare) +" "+
+                    firstCharacter + " " + getResources().getString(R.string.chapter3_2_2textNoShare) +" "+
+                    secondCharacter + " " + getResources().getString(R.string.chapter3_2_3textNoShare);
+
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter3_2_2));
+            TextView textView = (TextView) rootView.findViewById(R.id.chapter3_2_Text);
+            textView.setTypeface(tf);
+            textView.setTextSize(27);
+            textView.setText(text);
+
+        }
         return rootView;    //returning the rootView to be displayed on the fragment
-    }
-
-
-    public void action1(){
-        Intent intent = new Intent(getActivity(), Chapter4.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        startActivity(intent);
-    }
-
-    public void action2(){
-        Intent intent = new Intent(getActivity(), Chapter4.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        startActivity(intent);
     }
 }

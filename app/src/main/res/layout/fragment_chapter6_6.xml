@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.drake.cs188.finalproject.chapter5.Chapter6_6Fragment"
+    android:background="@color/yellow">
+
+
+    <!--Craig, Jesse Jeun: Basic set up for action page with textview and buttons-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chapter6_6_Text"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:padding="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/action6_1"
+        android:background="@color/red"
+        android:layout_gravity="center"
+        android:layout_below="@+id/chapter6_6_Text"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/action6_2"
+        android:background="@color/green"
+        android:layout_gravity="center"
+        android:layout_below="@+id/action6_1"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="false"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/action6_3"
+        android:background="@color/blue"
+        android:layout_gravity="center"
+        android:layout_below="@+id/action6_2"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="false"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
