@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +54,8 @@ public class Chapter3_7Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_chapter3_7, container, false);
+
+        rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.decision));
 
         // declaring and intializing shared preferences function on android devices
         shared = this.getActivity().getSharedPreferences("StoryTime", Context.MODE_PRIVATE);

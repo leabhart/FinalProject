@@ -57,6 +57,8 @@ public class Chapter5_5Fragment extends Fragment {
         // creating object rootView that is istantiated to value of type ViewGroup
         View rootView = inflater.inflate(R.layout.fragment_chapter5_5, container, false);
 
+        rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.decision));
+
         // declaring and intializing shared preferences function on android devices
         shared = this.getActivity().getSharedPreferences("StoryTime", Context.MODE_PRIVATE);
         String firstCharacter = shared.getString("firstCharacter", "");  // getting variable firstCharacter from shared preferences
