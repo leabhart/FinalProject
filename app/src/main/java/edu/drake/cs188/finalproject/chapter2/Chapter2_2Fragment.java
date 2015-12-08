@@ -51,10 +51,6 @@ public class Chapter2_2Fragment extends Fragment {
         // creating object rootView that is istantiated to value of type ViewGroup
         View rootView = inflater.inflate(R.layout.fragment_chapter2_2, container, false);
 
-        // craig: play bus horn when fragment appears
-        MediaPlayer chapter2_1_bus_horn = MediaPlayer.create(getContext(), R.raw.horn);
-        chapter2_1_bus_horn.start();
-
         // declaring and intializing shared preferences function on android devices
         SharedPreferences shared = this.getActivity().getSharedPreferences("StoryTime", Context.MODE_PRIVATE);
         String firstCharacter = shared.getString("firstCharacter", "");  // getting variable firstCharacter from shared preferences
