@@ -4,6 +4,7 @@ package edu.drake.cs188.finalproject.chapter7;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
@@ -62,7 +63,7 @@ public class Chapter7_2Fragment extends Fragment {
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
         if (decision == 1){
             String text = getResources().getString(R.string.chapter7_2_1urness);
-
+            playSound(R.raw.door);//craig
             rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter7_2_blue));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter7_1_Text);
             textView.setTypeface(tf);
@@ -72,7 +73,7 @@ public class Chapter7_2Fragment extends Fragment {
 
         if(decision == 2){
             String text = getResources().getString(R.string.chapter7_2_2inman);
-
+            playSound(R.raw.door);//craig
             rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter7_2_green));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter7_1_Text);
             textView.setTypeface(tf);
@@ -83,7 +84,7 @@ public class Chapter7_2Fragment extends Fragment {
 
         if(decision == 3){
             String text = getResources().getString(R.string.chapter7_2_3fender);
-
+            playSound(R.raw.door);//craig
             rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter7_2_red));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter7_1_Text);
             textView.setTypeface(tf);
@@ -93,5 +94,13 @@ public class Chapter7_2Fragment extends Fragment {
         }
 
         return rootView;    //returning the rootView to be displayed on the fragment
+    }
+
+    /**
+     * craig: function to play the sound
+     */
+    private void playSound(int sound_file_id){
+        MediaPlayer some_sound = MediaPlayer.create(getContext(), sound_file_id);
+        some_sound.start();
     }
 }

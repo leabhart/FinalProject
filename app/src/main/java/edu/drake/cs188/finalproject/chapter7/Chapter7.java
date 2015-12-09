@@ -1,5 +1,6 @@
 package edu.drake.cs188.finalproject.chapter7;
 
+import android.media.MediaPlayer;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -69,6 +70,7 @@ public class Chapter7 extends FragmentActivity{
                 case 2:
                     return Chapter7_3Fragment.newInstance(position);
                 case 3:
+                    playSound(R.raw.schoolbell); //craig
                     return Chapter7_4Fragment.newInstance(position);
                 case 4:
                     return Chapter7_5Fragment.newInstance(position);
@@ -78,5 +80,13 @@ public class Chapter7 extends FragmentActivity{
                     return null;
             }
         }
+    }
+
+    /**
+     * craig: function to play the sound
+     */
+    private void playSound(int sound_file_id){
+        MediaPlayer some_sound = MediaPlayer.create(this, sound_file_id);
+        some_sound.start();
     }
 }

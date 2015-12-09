@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
@@ -96,6 +97,7 @@ public class Chapter4_2Fragment extends Fragment {
             submitAction1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    playSound(R.raw.typing); // craig
                     action1(1); // calling the submit method
                 }
             });
@@ -104,6 +106,7 @@ public class Chapter4_2Fragment extends Fragment {
             submitAction2.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    playSound(R.raw.pagesturning); //craig
                     action2(1); // calling the submit method
                 }
             });
@@ -209,6 +212,14 @@ public class Chapter4_2Fragment extends Fragment {
             startActivity(intent);
         }
 
+    }
+
+    /**
+     * craig: function to play the sound
+     */
+    private void playSound(int sound_file_id){
+        MediaPlayer some_sound = MediaPlayer.create(getContext(), sound_file_id);
+        some_sound.start();
     }
 
 }

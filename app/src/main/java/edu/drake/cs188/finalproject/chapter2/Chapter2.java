@@ -1,5 +1,6 @@
 package edu.drake.cs188.finalproject.chapter2;
 
+import android.media.MediaPlayer;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -68,16 +69,20 @@ public class Chapter2 extends FragmentActivity{
                 case 1:
                     return Chapter2_2Fragment.newInstance(position);
                 case 2:
+                    playSound(R.raw.horn); //craig
                     return Chapter2_3Fragment.newInstance(position);
                 case 3:
                     return Chapter2_4Fragment.newInstance(position);
                 case 4:
+                    playSound(R.raw.busdoor); //craig
                     return Chapter2_5Fragment.newInstance(position);
                 case 5:
                     return Chapter2_6Fragment.newInstance(position);
                 case 6:
+                    playSound(R.raw.dogbarking); //craig
                     return Chapter2_7Fragment.newInstance(position);
                 case 7:
+                    playSound(R.raw.siren); //craig
                     return Chapter2_8Fragment.newInstance(position);
                 case 8:
                     return Chapter2_9Fragment.newInstance(position);
@@ -87,5 +92,13 @@ public class Chapter2 extends FragmentActivity{
                     return null;
             }
         }
+    }
+
+    /**
+     * craig: function to play the sound
+     */
+    private void playSound(int sound_file_id){
+        MediaPlayer some_sound = MediaPlayer.create(this, sound_file_id);
+        some_sound.start();
     }
 }

@@ -1,5 +1,6 @@
 package edu.drake.cs188.finalproject.chapter4;
 
+import android.media.MediaPlayer;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -71,4 +72,5 @@ public class Chapter4 extends FragmentActivity{
             }
         }
     }
+
 }
