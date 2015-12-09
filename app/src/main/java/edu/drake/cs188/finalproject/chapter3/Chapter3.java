@@ -1,5 +1,6 @@
 package edu.drake.cs188.finalproject.chapter3;
 
+import android.media.MediaPlayer;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -67,6 +68,7 @@ public class Chapter3 extends FragmentActivity {
                 case 1:
                     return Chapter3_2Fragment.newInstance(position);
                 case 2:
+                    playSound(R.raw.eatcookie); //craig
                     return Chapter3_3Fragment.newInstance(position);
                 case 3:
                     return Chapter3_4Fragment.newInstance(position);
@@ -80,5 +82,13 @@ public class Chapter3 extends FragmentActivity {
                     return null;
             }
         }
+    }
+
+    /**
+     * craig: function to play the sound
+     */
+    private void playSound(int sound_file_id){
+        MediaPlayer some_sound = MediaPlayer.create(this, sound_file_id);
+        some_sound.start();
     }
 }

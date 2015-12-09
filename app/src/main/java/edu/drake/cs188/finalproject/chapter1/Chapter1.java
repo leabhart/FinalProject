@@ -1,5 +1,6 @@
 package edu.drake.cs188.finalproject.chapter1;
 
+import android.media.MediaPlayer;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -8,6 +9,8 @@ import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 
 import edu.drake.cs188.finalproject.R;
+
+import static edu.drake.cs188.finalproject.R.raw.*;
 
 public class Chapter1 extends FragmentActivity{
 
@@ -63,6 +66,7 @@ public class Chapter1 extends FragmentActivity{
 
             switch (position) {
                 case 0:
+                    playSound(wakeup); // craig
                     return Chapter1_1Fragment.newInstance(position);
                 case 1:
                     return Chapter1_2Fragment.newInstance(position);
@@ -78,4 +82,13 @@ public class Chapter1 extends FragmentActivity{
         }
 
     }
+
+    /**
+     * craig: function to play the sound
+     */
+    private void playSound(int sound_file_id){
+        MediaPlayer some_sound = MediaPlayer.create(this, sound_file_id);
+        some_sound.start();
+    }
+
 }
