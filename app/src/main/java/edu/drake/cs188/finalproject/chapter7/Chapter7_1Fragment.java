@@ -5,19 +5,26 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 import edu.drake.cs188.finalproject.R;
+import edu.drake.cs188.finalproject.classes.Narration;
 
 
 public class Chapter7_1Fragment extends Fragment {
     // Variables declared for the class
     public static final String ARG_PAGE = "ARG_PAGE";
+    String text;
+    TextToSpeech voice;
 
     public Chapter7_1Fragment() {
         // Required empty public constructor
@@ -59,11 +66,12 @@ public class Chapter7_1Fragment extends Fragment {
         int decision = shared.getInt("decision", 0);
 
         if(decision == 1){
-            String text = firstCharacter + " " + getResources().getString(R.string.chapter7_1_1text) + " " +
+            text = firstCharacter + " " + getResources().getString(R.string.chapter7_1_1text) + " " +
                     secondCharacter + " " + getResources().getString(R.string.chapter7_1_2text) +" "+ "blue " +
                     getResources().getString(R.string.chapter7_1_3text);
 
-            Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.blue_door));
+            Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
             TextView textView = (TextView) rootView.findViewById(R.id.chapter7_1_Text);
             textView.setTypeface(tf);
             textView.setTextSize(27);
@@ -71,11 +79,12 @@ public class Chapter7_1Fragment extends Fragment {
         }
 
         if(decision == 2){
-            String text = firstCharacter + " " + getResources().getString(R.string.chapter7_1_1text) + " " +
+            text = firstCharacter + " " + getResources().getString(R.string.chapter7_1_1text) + " " +
                     secondCharacter + " " + getResources().getString(R.string.chapter7_1_2text) +" "+ "green " +
                     getResources().getString(R.string.chapter7_1_3text);
 
-            Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.green_door));
+            Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
             TextView textView = (TextView) rootView.findViewById(R.id.chapter7_1_Text);
             textView.setTypeface(tf);
             textView.setTextSize(27);
@@ -83,16 +92,37 @@ public class Chapter7_1Fragment extends Fragment {
         }
 
         if(decision == 3){
-            String text = firstCharacter + " " + getResources().getString(R.string.chapter7_1_1text) + " " +
+            text = firstCharacter + " " + getResources().getString(R.string.chapter7_1_1text) + " " +
                     secondCharacter + " " + getResources().getString(R.string.chapter7_1_2text) +" "+ "red " +
                     getResources().getString(R.string.chapter7_1_3text);
 
-            Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.red_door));
+            Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
             TextView textView = (TextView) rootView.findViewById(R.id.chapter7_1_Text);
             textView.setTypeface(tf);
             textView.setTextSize(27);
             textView.setText(text);
         }
+
+        // initializing TextToSpeech: JJeun
+        voice = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status != TextToSpeech.ERROR) {
+                    voice.setLanguage(Locale.UK);
+                }
+            }
+        });
+
+        // creating on click listener for speechButton: JJeun
+        ImageButton narrationButton = (ImageButton) rootView.findViewById(R.id.narrationButton);
+        narrationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Narration narration = new Narration(); // calling instance of narration
+                narration.playNarration(voice, text); // calling playNarration of custom narration class
+            }
+        });
 
         return rootView;
     }

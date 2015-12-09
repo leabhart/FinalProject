@@ -6,19 +6,26 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 import edu.drake.cs188.finalproject.R;
+import edu.drake.cs188.finalproject.classes.Narration;
 
 
 public class Chapter5_1Fragment extends Fragment {
     // Variables declared for the class
     public static final String ARG_PAGE = "ARG_PAGE";
+    String text;
+    TextToSpeech voice;
 
     public Chapter5_1Fragment() {
         // Required empty public constructor
@@ -58,9 +65,9 @@ public class Chapter5_1Fragment extends Fragment {
         String secondCharacter = shared.getString("secondCharacter", "");  // getting variable secondCharacter from shared preferences
         int decision = shared.getInt("decision", 0);  // getting variable decision from shared preferences
 
-        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
         if (decision == 1){
-            String text = firstCharacter +" "+ getResources().getString(R.string.chapter5_1_1textFour) +" "+
+            text = firstCharacter +" "+ getResources().getString(R.string.chapter5_1_1textFour) +" "+
                     secondCharacter + " " + getResources().getString(R.string.chapter5_1_2textFour);
 
             rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter5_1_1));
@@ -71,7 +78,7 @@ public class Chapter5_1Fragment extends Fragment {
         }
 
         if(decision == 2){
-            String text = firstCharacter +" "+ getResources().getString(R.string.chapter5_1_1textSwing)
+            text = firstCharacter +" "+ getResources().getString(R.string.chapter5_1_1textSwing)
                     +" "+ secondCharacter + " " + getResources().getString(R.string.chapter5_1_2textSwing);
 
             rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter5_1_2));
@@ -81,6 +88,27 @@ public class Chapter5_1Fragment extends Fragment {
             textView.setText(text);
 
         }
+
+        // initializing TextToSpeech: JJeun
+        voice = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status != TextToSpeech.ERROR) {
+                    voice.setLanguage(Locale.UK);
+                }
+            }
+        });
+
+        // creating on click listener for speechButton: JJeun
+        ImageButton narrationButton = (ImageButton) rootView.findViewById(R.id.narrationButton);
+        narrationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Narration narration = new Narration(); // calling instance of narration
+                narration.playNarration(voice, text); // calling playNarration of custom narration class
+            }
+        });
+
 
         return rootView;    //returning the rootView to be displayed on the fragment
     }

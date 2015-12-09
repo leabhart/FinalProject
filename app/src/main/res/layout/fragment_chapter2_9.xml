@@ -12,10 +12,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chapter2_9_Text"
-        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:padding="30dp" />
+        android:layout_marginTop="5dp"
+        android:padding="30dp"
+        android:layout_below="@+id/narrationButton"
+        android:background="@color/opaque_white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -25,5 +28,15 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/narrationButton"
+        android:background="@drawable/easteregg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_margin="10dp" />
 
 </RelativeLayout>

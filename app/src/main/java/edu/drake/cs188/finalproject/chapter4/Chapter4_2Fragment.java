@@ -8,23 +8,30 @@ import android.graphics.Typeface;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 import edu.drake.cs188.finalproject.R;
 import edu.drake.cs188.finalproject.chapter5.Chapter5;
 import edu.drake.cs188.finalproject.chapter6.Chapter6;
+import edu.drake.cs188.finalproject.classes.Narration;
 
 
 public class Chapter4_2Fragment extends Fragment {
     // Variables declared for the class
     public static final String ARG_PAGE = "ARG_PAGE";
     SharedPreferences shared;
+    String text;
+    TextToSpeech voice;
 
     public Chapter4_2Fragment() {
         // Required empty public constructor
@@ -75,10 +82,10 @@ public class Chapter4_2Fragment extends Fragment {
 
         if (decision == 1) {
 
-            String text = firstCharacter + " " + getResources().getString(R.string.chapter4_2_1libtext) + " " +
+            text = firstCharacter + " " + getResources().getString(R.string.chapter4_2_1libtext) + " " +
                     secondCharacter + " " + getResources().getString(R.string.chapter4_2_2libtext);
 
-            Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
+            Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
             textView.setTypeface(tf);
             textView.setTextSize(27);
             textView.setText(text);
@@ -115,7 +122,7 @@ public class Chapter4_2Fragment extends Fragment {
 
         if (decision == 2) {
 
-            String text = firstCharacter + " " + getResources().getString(R.string.chapter4_2_1playtext) + " " +
+            text = firstCharacter + " " + getResources().getString(R.string.chapter4_2_1playtext) + " " +
                     secondCharacter + " " + getResources().getString(R.string.chapter4_2_2libtext);
 
             Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
@@ -150,6 +157,27 @@ public class Chapter4_2Fragment extends Fragment {
             });
 
         }
+
+        // initializing TextToSpeech: JJeun
+        voice = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status != TextToSpeech.ERROR) {
+                    voice.setLanguage(Locale.UK);
+                }
+            }
+        });
+
+        // creating on click listener for speechButton: JJeun
+        ImageButton narrationButton = (ImageButton) rootView.findViewById(R.id.narrationButton);
+        narrationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Narration narration = new Narration(); // calling instance of narration
+                narration.playNarration(voice, text); // calling playNarration of custom narration class
+            }
+        });
+
 
         return rootView;    //returning the rootView to be displayed on the fragment
     }

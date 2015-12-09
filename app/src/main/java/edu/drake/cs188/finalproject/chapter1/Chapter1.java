@@ -90,5 +90,4 @@ public class Chapter1 extends FragmentActivity{
         MediaPlayer some_sound = MediaPlayer.create(this, sound_file_id);
         some_sound.start();
     }
-
 }

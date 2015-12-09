@@ -7,17 +7,22 @@ import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 
+import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 import edu.drake.cs188.finalproject.R;
 import edu.drake.cs188.finalproject.chapter2.Chapter2;
 import edu.drake.cs188.finalproject.chapter3.Chapter3;
+import edu.drake.cs188.finalproject.classes.Narration;
 
 
 public class Chapter1_5Fragment extends Fragment {
@@ -25,6 +30,7 @@ public class Chapter1_5Fragment extends Fragment {
     public static final String ARG_PAGE = "ARG_PAGE";
 
     SharedPreferences shared;
+    TextToSpeech voice;
 
     public Chapter1_5Fragment() {
         // Required empty public constructor
@@ -64,9 +70,30 @@ public class Chapter1_5Fragment extends Fragment {
         shared = this.getActivity().getSharedPreferences("StoryTime", Context.MODE_PRIVATE);
         String firstCharacter = shared.getString("firstCharacter", "");  // getting variable firstCharacter from shared preferences
         String secondCharacter = shared.getString("secondCharacter", "");
-        String text = getResources().getString(R.string.chapter1_5_1text) +" "+ firstCharacter +" "+ getResources().getString(R.string.chapter1_5_2text);
+        final String text = getResources().getString(R.string.chapter1_5_1text) +" "+ firstCharacter +" "+ getResources().getString(R.string.chapter1_5_2text);
 
-        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Regular.ttf");
+        // initializing TextToSpeech: JJeun
+        voice = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status != TextToSpeech.ERROR) {
+                    voice.setLanguage(Locale.UK);
+                }
+            }
+        });
+
+        // creating on click listener for speechButton: JJeun
+        ImageButton narrationButton = (ImageButton) rootView.findViewById(R.id.narrationButton);
+        narrationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Narration narration = new Narration(); // calling instance of narration
+                narration.playNarration(voice, text); // calling playNarration of custom narration class
+            }
+        });
+
+        // declaring and calling instance of Typeface. Will be used to set the fonts on textView
+        Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
 
         TextView textView = (TextView) rootView.findViewById(R.id.chapter1_5_Text);
         textView.setTypeface(tf);

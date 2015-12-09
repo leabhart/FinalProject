@@ -11,20 +11,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chapter6_6_Text"
-        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:padding="30dp" />
+        android:layout_marginTop="5dp"
+        android:padding="30dp"
+        android:layout_below="@+id/narrationButton"
+        android:textColor="@color/orange"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/action6_1"
-        android:background="@color/red"
+        android:background="@color/blue"
         android:layout_gravity="center"
         android:layout_below="@+id/chapter6_6_Text"
         android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:padding="15dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -35,17 +37,29 @@
         android:layout_below="@+id/action6_1"
         android:layout_marginTop="30dp"
         android:layout_alignParentRight="false"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:padding="15dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/action6_3"
-        android:background="@color/blue"
+        android:background="@color/red"
         android:layout_gravity="center"
         android:layout_below="@+id/action6_2"
         android:layout_marginTop="30dp"
         android:layout_alignParentRight="false"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:padding="15dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/narrationButton"
+        android:background="@drawable/easteregg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_margin="10dp" />
 
 </RelativeLayout>

@@ -13,4 +13,6 @@
     <color name="yellow">#fdfd96</color>
     <color name="magenta">#ff4aff</color>
     <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="opaque_white">#25ffffff</color>
 </resources>
