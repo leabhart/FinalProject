@@ -37,4 +37,14 @@
         android:layout_alignParentStart="false"
         android:layout_margin="10dp" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wakeup"
+        android:src="@drawable/sound"
+        android:layout_marginTop="164dp"
+        android:layout_below="@+id/chapter1_1_Text"
+        android:layout_toRightOf="@+id/narrationButton"
+        android:layout_toEndOf="@+id/narrationButton"/>
+
 </RelativeLayout>
