@@ -4,6 +4,7 @@ package edu.drake.cs188.finalproject.chapter2;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -82,6 +84,17 @@ public class Chapter2_7Fragment extends Fragment {
             }
         });
 
+        /**
+         * craig: sound button
+         */
+        ImageView policeSiren = (ImageView) rootView.findViewById(R.id.policeWoman);
+        policeSiren.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSound(R.raw.siren);
+            }
+        });
+
         // declaring and calling instance of Typeface. Will be used to set the fonts on textView
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
         TextView textView = (TextView) rootView.findViewById(R.id.chapter2_7_Text);
@@ -90,5 +103,13 @@ public class Chapter2_7Fragment extends Fragment {
         textView.setText(text);
 
         return rootView;    //returning the rootView to be displayed on the fragment
+    }
+
+    /**
+     * craig: function to play the sound
+     */
+    private void playSound(int sound_file_id){
+        MediaPlayer some_sound = MediaPlayer.create(getContext(), sound_file_id);
+        some_sound.start();
     }
 }
