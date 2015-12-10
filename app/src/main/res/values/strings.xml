@@ -12,15 +12,17 @@
     <string name="chapter1_1_2text"> woke up on this sunny day. Today is </string>
     <string name="chapter1_1_3text">’s first day of school.</string>
 
-    <string name="chapter1_2_1text">How excited </string>
-    <string name="chapter1_2_2text"> is! Now he will leave his house and start his day!</string>
+    <string name="chapter1_2_1text">is so nervous! Will</string>
+    <string name="chapter1_2_2text"> be able to make any friends or have fun?
+        Time to leave the house and start the first day of shool!</string>
 
     <string name="chapter1_3_1text"> is walking to the bus stop, which will take </string>
     <string name="chapter1_3_2text"> to school.</string>
 
     <string name="chapter1_4_1text">Hey, look! It’s </string>
     <string name="chapter1_4_2text">’s friend,  </string>
-    <string name="chapter1_4_3text">. What will he do next?</string>
+    <string name="chapter1_4_3text">. What will</string>
+    <string name="chapter1_4_4text"> do next?</string>
 
     <string name="chapter1_5_1text">What should </string>
     <string name="chapter1_5_2text"> do next?</string>
@@ -36,10 +38,12 @@
     <string name="title_activity_chapter2">Chapter 2</string>
 
     <string name="chapter2_1_1textWave">sees</string>
-    <string name="chapter2_1_2textWave">and decides to wave at him.</string>
+    <string name="chapter2_1_2textWave">and decides to wave at</string>
+    <string name="chapter2_1_3textWave">.</string>
 
     <string name="chapter2_1_1textFive">sees</string>
-    <string name="chapter2_1_2textFive">and decides to high-five him.</string>
+    <string name="chapter2_1_2textFive">and decides to high-five</string>
+    <string name="chapter2_1_3textFive">.</string>
 
     <string name="chapter2_2_1text"> and </string>
     <string name="chapter2_2_2text"> like riding the bus, but they both like sitting next to the window.</string>
@@ -62,8 +66,8 @@
     <string name="chapter2_8_3text">.</string>
 
     <string name="chapter2_9_1text">\"You are so lucky </string>
-    <string name="chapter2_9_2text">. My lunch box doesn\'t have any dessert!" said </string>
-    <string name="chapter2_9_3text">. "I wish I had a cookie!"</string>
+    <string name="chapter2_9_2text">. My lunch box doesn\'t have any dessert!\" </string>
+    <string name="chapter2_9_3text">said. \"I wish I had a cookie!\"</string>
 
     <string name="chapter2_10_1text">Should </string>
     <string name="chapter2_10_2text"> share the cookie with </string>
@@ -194,8 +198,8 @@
     <string name="title_activity_chapter6">Chapter 6</string>
 
     <string name="chapter6_1_1textGame"> and </string>
-    <string name="chapter6_1_2textGame"> love playing Hello World. It’s their favorite game. \“Why don’t we take turns playing?” </string>
-    <string name="chapter6_1_3textGame"> said. \“That’s a great idea, </string>
+    <string name="chapter6_1_2textGame"> love playing Hello World. It’s their favorite game. \"Why don’t we take turns playing?” </string>
+    <string name="chapter6_1_3textGame"> said. \"That’s a great idea, </string>
     <string name="chapter6_1_4textGame">!\" </string>
     <string name="chapter6_1_5textGame"> said.</string>
 
@@ -207,7 +211,7 @@
         Mrs. Letter is reading their favorite book: Griff the Bulldog Goes to Camp. </string>
 
     <string name="chapter6_2_1textBook"> and </string>
-    <string name="chapter6_2_2textBook">sit criss-cross and listen to the story.</string>
+    <string name="chapter6_2_2textBook">sit and listen to the story.</string>
 
     <string name="chapter6_3_1text">\" </string>
     <string name="chapter6_3_2text"> and </string>
@@ -248,10 +252,15 @@
     <string name="chapter7_2_1urness">Mr. Urness! Hello World! Welcome to computer class!</string>
     <string name="chapter7_2_2inman">"Mr. Inman! Yo! Welcome to story class!"</string>
     <string name="chapter7_2_3fender">"Mr. Fender! Hey there! Welcome to drawing class!</string>
+
+    <string name="chapter7_4_1textMoral">had no reason to be nervous at all!</string>
+    <string name="chapter7_4_2textMoral">When school ended,</string>
+    <string name="chapter7_4_3textMoral">exclaimed, \"I can\'t wait to come back tommorrow!\"</string>
+
     <string name="chapter7_4_1text">\" </string>
     <string name="chapter7_4_2text"> and </string>
     <string name="chapter7_4_3text">had so much fun learning, but it is time to go home and rest
-        so they can come back to school and have more fun tomorrow.”</string>
+        so they can come back to school and have more fun tomorrow.</string>
 
     <string name="chapter7_5_1text">The End</string>
 

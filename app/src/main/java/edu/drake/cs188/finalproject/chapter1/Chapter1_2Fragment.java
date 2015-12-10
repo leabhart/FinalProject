@@ -65,7 +65,7 @@ public class Chapter1_2Fragment extends Fragment {
         // declaring and intializing shared preferences function on android devices
         SharedPreferences shared = this.getActivity().getSharedPreferences("StoryTime", Context.MODE_PRIVATE);
         String firstCharacter = shared.getString("firstCharacter", "");  // getting variable firstCharacter from shared preferences
-        final String text = getResources().getString(R.string.chapter1_2_1text) +" "+ firstCharacter +" "+ getResources().getString(R.string.chapter1_2_2text) ;
+        final String text = firstCharacter +" "+ getResources().getString(R.string.chapter1_2_1text) +" "+ firstCharacter +" "+ getResources().getString(R.string.chapter1_2_2text) ;
 
         // initializing TextToSpeech: JJeun
         voice = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {

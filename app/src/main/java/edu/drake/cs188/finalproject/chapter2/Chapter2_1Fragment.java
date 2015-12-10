@@ -71,7 +71,8 @@ public class Chapter2_1Fragment extends Fragment {
 
         if (decision == 1){
             text = firstCharacter +" "+ getResources().getString(R.string.chapter2_1_1textWave) +" "+
-                    secondCharacter +" "+ getResources().getString(R.string.chapter2_1_2textWave);
+                    secondCharacter +" "+ getResources().getString(R.string.chapter2_1_2textWave)
+                    +" "+ secondCharacter + getResources().getString(R.string.chapter2_1_3textWave);
 
             rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter2_1_1));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter2_1_Text);
@@ -82,7 +83,8 @@ public class Chapter2_1Fragment extends Fragment {
 
         if(decision == 2){
             text = firstCharacter +" "+ getResources().getString(R.string.chapter2_1_1textFive) +" "+
-                    secondCharacter +" "+ getResources().getString(R.string.chapter2_1_2textFive);
+                    secondCharacter +" "+ getResources().getString(R.string.chapter2_1_2textFive)
+                    +" "+ secondCharacter + getResources().getString(R.string.chapter2_1_3textFive);
 
             rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter2_1_2));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter2_1_Text);

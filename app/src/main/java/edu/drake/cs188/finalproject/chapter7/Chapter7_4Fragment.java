@@ -65,9 +65,11 @@ public class Chapter7_4Fragment extends Fragment {
         String firstCharacter = shared.getString("firstCharacter", "");  // getting variable firstCharacter from shared preferences
         String secondCharacter = shared.getString("secondCharacter", "");  // getting variable secondCharacter from shared preferences
 
-        final String text = getResources().getString(R.string.chapter7_4_1text) + firstCharacter + " " +
-                getResources().getString(R.string.chapter7_4_2text) + " " + secondCharacter + " " +
-                getResources().getString(R.string.chapter7_4_3text);
+        final String text = firstCharacter +" "+ getResources().getString(R.string.chapter7_4_1textMoral) +" "+
+                getResources().getString(R.string.chapter7_4_2textMoral) +" "+
+                firstCharacter +" "+ getResources().getString(R.string.chapter7_4_3textMoral) +" "+
+                firstCharacter + " " + getResources().getString(R.string.chapter7_4_2text) + " " +
+                secondCharacter + " " + getResources().getString(R.string.chapter7_4_3text);
 
         // initializing TextToSpeech: JJeun
         voice = new TextToSpeech(getContext(), new TextToSpeech.OnInitListener() {
