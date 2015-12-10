@@ -16,7 +16,10 @@
         android:layout_marginTop="5dp"
         android:padding="30dp"
         android:layout_below="@+id/narrationButton"
-        android:textColor="@color/orange"/>
+        android:textColor="@color/orange"
+        android:background="@color/opaque2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 
     <Button
         android:layout_width="wrap_content"

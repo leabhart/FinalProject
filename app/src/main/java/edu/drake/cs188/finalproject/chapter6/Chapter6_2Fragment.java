@@ -85,7 +85,7 @@ public class Chapter6_2Fragment extends Fragment {
             text = firstCharacter +" "+ getResources().getString(R.string.chapter6_2_1textBook)
                     +" "+ secondCharacter + " " + getResources().getString(R.string.chapter6_2_2textBook);
 
-//            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_2_2));
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_2_2));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter6_2_Text);
             textView.setTypeface(tf);
             textView.setTextSize(27);

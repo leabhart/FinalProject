@@ -68,13 +68,13 @@ public class Chapter6_1Fragment extends Fragment {
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
         if (decision == 1){
 
-            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_1_1));
             text = firstCharacter +" "+ getResources().getString(R.string.chapter6_1_1textGame) +" "+
                     secondCharacter + " " + getResources().getString(R.string.chapter6_1_2textGame) +" "+
                     firstCharacter + " " + getResources().getString(R.string.chapter6_1_3textGame) +" "+
                     firstCharacter + " " + getResources().getString(R.string.chapter6_1_4textGame) +" "+
                     secondCharacter + " " + getResources().getString(R.string.chapter6_1_5textGame);
-//            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_1_1));
+
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_1_1));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter6_1_Text);
             textView.setTypeface(tf);
             textView.setTextSize(27);
@@ -83,11 +83,11 @@ public class Chapter6_1Fragment extends Fragment {
 
         if(decision == 2){
 
-//            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_2_1));
+
             text = firstCharacter +" "+ getResources().getString(R.string.chapter6_1_1textBook)
                     +" "+ secondCharacter + " " + getResources().getString(R.string.chapter6_1_2textBook);
 
-//            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_1_2));
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_1_2));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter6_1_Text);
             textView.setTypeface(tf);
             textView.setTextSize(27);
