@@ -7,6 +7,7 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,6 +59,7 @@ public class Chapter1_2Fragment extends Fragment {
 
         // creating object rootView that is istantiated to value of type ViewGroup
         View rootView = inflater.inflate(R.layout.fragment_chapter1_2, container, false);
+        rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter1_2));
 
 
         // declaring and intializing shared preferences function on android devices

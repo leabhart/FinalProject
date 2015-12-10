@@ -59,6 +59,7 @@ public class Chapter5_4Fragment extends Fragment {
 
         // creating object rootView that is istantiated to value of type ViewGroup
         View rootView = inflater.inflate(R.layout.fragment_chapter5_4, container, false);
+        rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter5_4));
 
         // declaring and intializing shared preferences function on android devices
         SharedPreferences shared = this.getActivity().getSharedPreferences("StoryTime", Context.MODE_PRIVATE);

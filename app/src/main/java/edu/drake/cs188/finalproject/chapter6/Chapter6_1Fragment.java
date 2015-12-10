@@ -67,6 +67,8 @@ public class Chapter6_1Fragment extends Fragment {
 
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
         if (decision == 1){
+
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_1_1));
             text = firstCharacter +" "+ getResources().getString(R.string.chapter6_1_1textGame) +" "+
                     secondCharacter + " " + getResources().getString(R.string.chapter6_1_2textGame) +" "+
                     firstCharacter + " " + getResources().getString(R.string.chapter6_1_3textGame) +" "+
@@ -80,6 +82,8 @@ public class Chapter6_1Fragment extends Fragment {
         }
 
         if(decision == 2){
+
+//            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_2_1));
             text = firstCharacter +" "+ getResources().getString(R.string.chapter6_1_1textBook)
                     +" "+ secondCharacter + " " + getResources().getString(R.string.chapter6_1_2textBook);
 

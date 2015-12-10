@@ -70,10 +70,11 @@ public class Chapter6_2Fragment extends Fragment {
 
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
         if (decision == 1){
+
             text = firstCharacter +" "+ getResources().getString(R.string.chapter6_2_1textGame) +" "+
                     secondCharacter + " " + getResources().getString(R.string.chapter6_2_2textGame);
 
-//            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_2_1));
+            rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter6_2_1));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter6_2_Text);
             textView.setTypeface(tf);
             textView.setTextSize(27);
