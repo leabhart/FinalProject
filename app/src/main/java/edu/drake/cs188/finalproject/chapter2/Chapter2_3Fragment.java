@@ -4,6 +4,7 @@ package edu.drake.cs188.finalproject.chapter2;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -85,6 +87,7 @@ public class Chapter2_3Fragment extends Fragment {
             }
         });
 
+
         // declaring and calling instance of Typeface. Will be used to set the fonts on textView
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
         TextView textView = (TextView) rootView.findViewById(R.id.chapter2_3_Text);
@@ -94,4 +97,6 @@ public class Chapter2_3Fragment extends Fragment {
 
         return rootView;    //returning the rootView to be displayed on the fragment
     }
+
+
 }

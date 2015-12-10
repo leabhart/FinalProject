@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -87,6 +88,17 @@ public class Chapter2_2Fragment extends Fragment {
             }
         });
 
+        /**
+         * craig: sound button
+         */
+        ImageView busSound = (ImageView) rootView.findViewById(R.id.bussound);
+        busSound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSound(R.raw.horn);
+            }
+        });
+
         // declaring and calling instance of Typeface. Will be used to set the fonts on textView
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
         TextView textView = (TextView) rootView.findViewById(R.id.chapter2_2_Text);
@@ -95,5 +107,13 @@ public class Chapter2_2Fragment extends Fragment {
         textView.setText(text);
 
         return rootView;    //returning the rootView to be displayed on the fragment
+    }
+
+    /**
+     * craig: function to play the sound
+     */
+    private void playSound(int sound_file_id){
+        MediaPlayer some_sound = MediaPlayer.create(getContext(), sound_file_id);
+        some_sound.start();
     }
 }
