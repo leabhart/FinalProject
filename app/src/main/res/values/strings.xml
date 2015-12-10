@@ -245,10 +245,9 @@
     <string name="chapter7_1_2text">  think for a moment. "Let's pick the </string>
     <string name="chapter7_1_3text"> classroom and were greeted by Mr...</string>
 
-    <string name="chapter7_2_1urness">"... Urness! Hello World! Welcome to computer class!</string>
-    <string name="chapter7_2_2inman">"... Inman! Yo! Welcome to story class!"</string>
-    <string name="chapter7_2_3fender">"... Fender! Hey there! Welcome to drawing class!</string>
-
+    <string name="chapter7_2_1urness">Mr. Urness! Hello World! Welcome to computer class!</string>
+    <string name="chapter7_2_2inman">"Mr. Inman! Yo! Welcome to story class!"</string>
+    <string name="chapter7_2_3fender">"Mr. Fender! Hey there! Welcome to drawing class!</string>
     <string name="chapter7_4_1text">\" </string>
     <string name="chapter7_4_2text"> and </string>
     <string name="chapter7_4_3text">had so much fun learning, but it is time to go home and rest

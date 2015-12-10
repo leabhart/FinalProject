@@ -69,7 +69,7 @@ public class Chapter7_2Fragment extends Fragment {
 
         Typeface tf = Typeface.createFromAsset(getActivity().getAssets(), "JosefinSans-Bold.ttf");
         if (decision == 1){
-            text = "Mr. " + getResources().getString(R.string.chapter7_2_1urness);
+            text = getResources().getString(R.string.chapter7_2_1urness);
             playSound(R.raw.door);//craig
             rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter7_2_blue));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter7_2_Text);
@@ -79,7 +79,7 @@ public class Chapter7_2Fragment extends Fragment {
         }
 
         if(decision == 2){
-            text = "Mr. " + getResources().getString(R.string.chapter7_2_2inman);
+            text = getResources().getString(R.string.chapter7_2_2inman);
             playSound(R.raw.door);//craig
             rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter7_2_green));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter7_2_Text);
@@ -90,7 +90,7 @@ public class Chapter7_2Fragment extends Fragment {
         }
 
         if(decision == 3){
-            text = "Mr. " + getResources().getString(R.string.chapter7_2_3fender);
+            text = getResources().getString(R.string.chapter7_2_3fender);
             playSound(R.raw.door);//craig
             rootView.setBackground(ContextCompat.getDrawable(getActivity(), R.drawable.chapter7_2_red));
             TextView textView = (TextView) rootView.findViewById(R.id.chapter7_2_Text);
