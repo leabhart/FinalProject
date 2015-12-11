@@ -4,6 +4,7 @@ package edu.drake.cs188.finalproject.chapter7;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import android.speech.tts.TextToSpeech;
@@ -13,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -93,6 +95,25 @@ public class Chapter7_3Fragment extends Fragment {
         textView.setTextSize(27);
         textView.setText(text);
 
+        /**
+         * craig: sound button
+         */
+        ImageView ringbell = (ImageView) rootView.findViewById(R.id.bellring);
+        ringbell.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSound(R.raw.schoolbell);
+            }
+        });
+
         return rootView;
+    }
+
+    /**
+     * craig: function to play the sound
+     */
+    private void playSound(int sound_file_id){
+        MediaPlayer some_sound = MediaPlayer.create(getContext(), sound_file_id);
+        some_sound.start();
     }
 }
