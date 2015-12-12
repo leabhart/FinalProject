@@ -52,9 +52,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/bird"
         android:src="@drawable/bird"
-        android:layout_marginTop="430dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginRight="140dp"
         android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView"
-        android:layout_marginRight="150dp" />
+        android:layout_alignEnd="@+id/imageView" />
 
 </RelativeLayout>

@@ -39,6 +39,16 @@
         android:layout_alignParentStart="false"
         android:layout_margin="10dp" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bird"
+        android:src="@drawable/bird"
+        android:layout_marginTop="445dp"
+        android:layout_marginRight="140dp"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
+
 
 
 </RelativeLayout>
