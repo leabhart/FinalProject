@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import android.speech.tts.TextToSpeech;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -114,6 +116,25 @@ public class Chapter3_2Fragment extends Fragment {
             }
         });
 
+        /**
+         * craig: sound button
+         */
+        ImageView cookie = (ImageView) rootView.findViewById(R.id.cookie);
+        cookie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                playSound(R.raw.eatcookie);
+            }
+        });
+
         return rootView;    //returning the rootView to be displayed on the fragment
+    }
+
+    /**
+     * craig: function to play the sound
+     */
+    private void playSound(int sound_file_id){
+        MediaPlayer some_sound = MediaPlayer.create(getContext(), sound_file_id);
+        some_sound.start();
     }
 }

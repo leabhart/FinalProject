@@ -4,6 +4,7 @@ package edu.drake.cs188.finalproject.chapter7;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v4.app.Fragment;
@@ -12,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -98,6 +100,10 @@ public class Chapter7_4Fragment extends Fragment {
         textView.setTextSize(27);
         textView.setText(text);
 
+
+
         return rootView;
     }
+
+
 }

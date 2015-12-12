@@ -14,4 +14,15 @@
         android:layout_marginTop="50dp"
         android:padding="30dp" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bird"
+        android:src="@drawable/bird"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/coverText"
+        android:layout_toEndOf="@+id/coverText"
+        android:layout_marginLeft="78dp"
+        android:layout_marginStart="78dp" />
+
 </RelativeLayout>
